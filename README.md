@@ -30,32 +30,32 @@ If you are hosting the results of a Confluence export within another static HTML
 ## Confluence Export
 The following are the steps to export your Confluence Space, and then use this repo to automate integrating the results. Note that **step 8** is the only one involving this repo. The rest are manual steps that you need to do regardless with Confluence.
 
-1. Go to space
-2. Select Space Settings > Manage Space > Export Space 
-	- Look in left sidebar at the top section, for Space Settings (next to a gear)
-3. Select Export Formats > HTML, then Next >>
+1. Go to the Space on Confluence that you want to export from.
+2. Select `Space Settings > Manage Space > Export Space` 
+  - Look in left sidebar at the top section, for `Space Settings` (next to a gear)
+3. Select `Export Formats > HTML`, then `Next >>`
 
-4. Export a zipped HTML File >
-	4a. (For large spaces/multi exports) Export a zipped HTML File > Select what to Export 
-		4aa. This opens the tree navigator for the site. 
-			- Selecting/deselecting parents selects/removes all children.
-			- For each separate export, select root node down to landing page of next child export (or all depths if there are no child exports). 
-	4b. (For single small space) Export a zipped HTML File > Export each page, with attachments.
+4. `Export a zipped HTML File >`
+  - **For large spaces/multi exports**: `Export a zipped HTML File > Select what to Export`
+    - This opens the tree navigator for the site.
+      - Selecting/deselecting parents selects/removes all children.
+      - For each separate export, select root node down to landing page of next child export (or all depths if there are no child exports). 
+  - **For single small space**: `Export a zipped HTML File > Export each page, with attachments`.
 
-5. Click 'Export' (at bottom of screen)
-6. Once space has finished exporting, click 'Download here' beneath the status bar. This brings up a dialog for selecting where to save the .zip file. From here, navigate to the corresponding Export Root Directory of the Space Export Compiler.
+6. Click `Export` (at bottom of screen)
+7. Once space has finished exporting, click `Download here` beneath the status bar. This brings up a dialog for selecting where to save the .zip file. From here, navigate to the corresponding Export Root Directory of the Space Export Compiler.
 
-7. To export another section in the same session:
-7a. Back up once in the browser
-7b. Toggle the 'Export a zipped HTML file' options to 'Export each page...' and back to 'Select what to export'
-7c. Repeat steps 4a-6
+8. To export another section in the same session:
+  - Back up once in the browser
+  - Toggle the `Export a zipped HTML file` options to `Export each page...` and back to `Select what to export`
+  - Repeat steps 4a-6
 
-8. Once all exports are complete: At the Root of the Space Export Compiler, execute the run.sh script to update the Exported Space Target
+9. Once all exports are complete: At the Root of the Space Export Compiler, execute the `run.sh` script to update the Exported Space Target
 
 Congratulations! Your exported Confluence Space has now been updated!
 
 ## Changing Sub-Space Scopes
-
+As your Space grows and shrinks, you may decide to subvide spaces into Sub-Spaces and Sub-Spaces into even further Sub-Spaces, or you may choose to integrate these exported parts. The following are steps on how to do that with this tool.
 
 ## Bash Script Arguments
 -d/--deasdasd
