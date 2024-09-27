@@ -42,7 +42,7 @@ The following are the steps to export your Confluence Space, and then use this r
 			- For each separate export, select root node down to landing page of next child export (or all depths if there are no child exports). 
 	4b. (For single small space) Export a zipped HTML File > Export each page, with attachments.
 
-5. > Export (at bottom of screen)
+5. Click 'Export' (at bottom of screen)
 6. Once space has finished exporting, click 'Download here' beneath the status bar. This brings up a dialog for selecting where to save the .zip file. From here, navigate to the corresponding Export Root Directory of the Space Export Compiler.
 
 7. To export another section in the same session:
