@@ -1,0 +1,33 @@
+# Site variables
+site_path=
+site_dir=
+site_wiki_dir=wiki
+
+# Staging variables
+staging_path=
+staging_dir=Wiki
+staging_wiki_dir=
+
+# Download variables
+# This is the name of the extracted directory that comes out of the downloaded .zip and MUST be present!
+extract_dir=
+
+# Default Variables
+# These probably shouldn't be changed
+zip_extension=.html.zip
+styles_dir=styles
+index_html=index.html
+home_dir=_home
+assets_dir=_assets
+push_sh=push.sh
+
+# Text formatting variables
+RESET=\033[0m
+RED=\033[31m
+GREEN=\033[32m
+YELLOW=\033[33m
+BOLD=\033[1m
+PARTY=🎉
+STAR=⭐
+FIRE=🔥
+EXPLOSION=💥
